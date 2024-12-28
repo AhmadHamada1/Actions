@@ -1,4 +1,4 @@
-name: Generate ascii cowsay
+name: 2-Generate ascii cowsay
 on: push
 
 jobs:

@@ -2,7 +2,7 @@
 # - name: checkout repo
 #         uses: actions/checkout@v3
 
-name: My First Workflow
+name: 1-My First Workflow
 on: push
 
 jobs:
