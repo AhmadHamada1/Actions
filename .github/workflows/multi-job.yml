@@ -1,4 +1,4 @@
-name: 3- Run Multiple Jobs
+name: 3-Run Multiple Jobs
 on: push
 
 jobs:
