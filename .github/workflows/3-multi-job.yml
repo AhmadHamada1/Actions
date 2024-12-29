@@ -1,5 +1,8 @@
 name: 3-Run Multiple Jobs
-on: push
+on:
+  #  push:
+   workflow_dispatch:
+
 
 jobs:
   build_job_1:
