@@ -29,7 +29,8 @@ jobs:
     #     with:
     #       name: dragon-txt-file
     #       path: ./artifact
-
+    
+    ##Find the file
       - name: Test File Exists
         run: grep -i "dragon" ./artifact/dragon.txt
 
@@ -42,6 +43,7 @@ jobs:
     #       name: dragon-txt-file
     #       path: ./artifact
 
+    ##Read the file
       - name: Read File
         run: cat ./artifact/dragon.txt
 
