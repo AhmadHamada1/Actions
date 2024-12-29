@@ -3,6 +3,7 @@ on:
   #  push:
    workflow_dispatch:
 
+    
 
 jobs:
   build_job_1:
@@ -14,21 +15,21 @@ jobs:
       - name: Execute Cowsay CMD
         run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
 
-      # - name: Upload Dragon file
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: dragon-txt-file
-      #     path: dragon.txt
+      - name: Upload Dragon file
+        uses: actions/upload-artifact@v3
+        with:
+          name: dragon-txt-file
+          path: dragon.txt
 
   test_job_2:
     
     runs-on: ubuntu-latest
     steps:
-      # - name: Download Dragon File
-      #   uses: actions/download-artifact@v3
-      #   with:
-      #     name: dragon-txt-file
-      #     path: ./artifact
+      - name: Download Dragon File
+        uses: actions/download-artifact@v3
+        with:
+          name: dragon-txt-file
+          path: ./artifact
     
     ##Find the file
       - name: Test File Exists
@@ -38,11 +39,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # - name: Download Dragon File
-      #   uses: actions/download-artifact@v3
-      #   with:
-      #     name: dragon-txt-file
-      #     path: ./artifact
+      - name: Download Dragon File
+        uses: actions/download-artifact@v3
+        with:
+          name: dragon-txt-file
+          path: ./artifact
 
     ##Read the file
       - name: Read File
