@@ -37,11 +37,11 @@ jobs:
   deploy_job_3:
     runs-on: ubuntu-latest
     steps:
-    #   - name: Download Dragon File
-    #     uses: actions/download-artifact@v3
-    #     with:
-    #       name: dragon-txt-file
-    #       path: ./artifact
+      - name: Download Dragon File
+        uses: actions/download-artifact@v3
+        with:
+          name: dragon-txt-file
+          path: ./artifact
 
     ##Read the file
       - name: Read File
