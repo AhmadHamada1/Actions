@@ -1,7 +1,6 @@
 name: 2-Generate ascii cowsay
 on: push
 
-
 jobs:
   ascii_job:
     runs-on: ubuntu-latest
